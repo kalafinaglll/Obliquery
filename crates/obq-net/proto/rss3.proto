@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package rss3;
+
+service Rss3 {
+  rpc SendMessage (Message) returns (Ack);
+}
+
+message Message {
+  int32 from = 1;
+  string payload = 2; 
+}
+
+message Ack {
+  bool ok = 1;
+}

@@ -1,0 +1,14 @@
+[package]
+name = "obq-net"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+obq-core = { path = "../obq-core" }
+tokio = { version = "1", features = ["full"] }
+tonic = "0.13"
+prost = "0.13"
+
+
+[build-dependencies]
+tonic-build  = "0.13"

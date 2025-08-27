@@ -1,0 +1,9 @@
+[package]
+name = "obq-backend-rss3"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+obq-core = { path = "../obq-core" }
+obq-circuit = { path = "../obq-circuit" }
+rand = "0.9.2"

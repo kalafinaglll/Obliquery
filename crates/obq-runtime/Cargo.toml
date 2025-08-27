@@ -1,0 +1,8 @@
+[package]
+name = "obq-runtime"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+obq-core = { path = "../obq-core" }
+obq-net = { path = "../obq-net" }

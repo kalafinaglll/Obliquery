@@ -1,0 +1,10 @@
+[package]
+name = "obq-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+obq-core = { path = "../obq-core" }
+obq-runtime = { path = "../obq-runtime" }
+obq-net = { path = "../obq-net" }
+clap = { version = "4", features = ["derive"] }

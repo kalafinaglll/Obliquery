@@ -1,0 +1,20 @@
+[workspace]
+members = [
+    "crates/obq-core",
+    "crates/obq-circuit",
+    "crates/obq-pal",
+    "crates/obq-backend-gc",
+    "crates/obq-backend-rss3",
+    "crates/obq-runtime",
+    "crates/obq-net",
+    "crates/obq-cli",
+    "crates/obq-examples",
+]
+
+# Enables modern feature resolver for dependencies
+resolver = "2"
+
+# Optional: Set a default binary crate for `cargo run`
+# so you can just run `cargo run` without -p
+default-members = ["crates/obq-cli"]
+
