@@ -124,8 +124,8 @@ fn test_rss3_boolean_and() {
 
 #[test]
 fn test_rss3_boolean_bitwise() {
-    let a = 0b1111111111111111111111111111111111111111111111111111111111111111;
-    let b = 0b1111111111111111111111111111111111111111111111111111111111111111;
+    let a = 0b1111111111111111111111111111111111111111;
+    let b = 0b1111111111111111111111111111111111111111;
     let sa = RSS3S_boolean_bitwise::share(a);
     let sb = RSS3S_boolean_bitwise::share(b);
     let rec = RSS3S_boolean_bitwise::reconstruct(&sa);

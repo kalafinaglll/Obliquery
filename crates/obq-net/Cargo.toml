@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 obq-core = { path = "../obq-core" }
+obq-backend-rss3 = {path = "../obq-backend-rss3"}
 tokio = { version = "1", features = ["full"] }
 tonic = "0.13"
 prost = "0.13"

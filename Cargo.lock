@@ -642,6 +642,7 @@ dependencies = [
 name = "obq-net"
 version = "0.1.0"
 dependencies = [
+ "obq-backend-rss3",
  "obq-core",
  "prost",
  "tokio",

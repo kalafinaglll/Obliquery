@@ -49,6 +49,13 @@ impl RSS3_arithmetic {
         //MODULUS_Zmod2n.wrapping_sub((x2.wrapping_add(x1).wrapping_add(a1))) % MODULUS_Zmod2n
     }
 
+    pub fn reconstruct_fromS0andS1(shares0: (u64,u64),shares1: (u64,u64)) -> u64{
+        let (x1, a1) = shares0;
+        let (x2, a2) = shares1;
+        MODULUS_Zmod2n.wrapping_add(x1).wrapping_sub(a2) % MODULUS_Zmod2n
+
+    }
+
     /// Addition over secret shares
     pub fn add(x: &[RSS3Share_arithmetic; 3], y: &[RSS3Share_arithmetic; 3]) -> [RSS3Share_arithmetic; 3] {
         [
