@@ -25,6 +25,7 @@ impl ShareStorage {
     }
 
     pub fn show_shares(&self) {
+        println!("Current Shares Storage:");
         for ((protocol_id, step_id, party_id), (share_1half, share_2half)) in &self.shares {
             println!("Protocol: {}, Step: {}, Party: {}, Share: ({}, {})", 
                      protocol_id, step_id, party_id, share_1half, share_2half);
