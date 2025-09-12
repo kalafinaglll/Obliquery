@@ -2,7 +2,7 @@
 
 **Working name:** `Obliquery`
 
-This document is a step‑by‑step blueprint to implement a Rust framework that executes *public queries over private inputs from multiple data owners* using pluggable MPC protocols. It covers design goals, threat model, architecture, IRs, optimization, operator circuits, protocol abstraction, deployment, and a TPC‑H benchmarking plan across 2–3 (and N) computing nodes.
+This repo called Obliquery is to implement a framework that can support efficient MPC-based query execution using Rust.
 
 ---
 
